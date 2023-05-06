@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SQL Injection Example</title>
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style>
+        /* Source: https://codepen.io/emreberber/pen/oeREoZ?editors=1100 */
+        body {
+            background: #222D32;
+            font-family: 'Roboto', sans-serif;
+            color: #fef;
+        }
+        .container {
+            text-align: center;
+            justify-content: center;
+            background: #353f44;
+            margin: 10vh auto;
+            padding: 30px;
+            border-radius: 4px;
+        }
+        h3 {
+            color: #c9c9c9
+        }
+        .green {
+            color: #0f0;
+        }
+        .red {
+            color: #f00;
+        }
+        table {
+            margin: auto;
+        }
+        td, th {
+            border: 1px solid #1e1e1e;
+            text-align: left;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Welcome {{userName}}!</h3>
+        <hr>
+        <p>Here are your account balances:</p>
+        <table>
+            <tr>
+                <th>Savings</th>
+                <th>Checking</th>
+                <th>Fancy Reward Card</th>
+            </tr>
+            <tr>
+                <td class="green">$3,412,078.40</td>
+                <td class="green">$391.33</td>
+                <td class="red">-$1,021.63</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
